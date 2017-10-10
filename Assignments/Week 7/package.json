@@ -1,0 +1,23 @@
+{
+  "name": "week7_homework",
+  "version": "1.0.0",
+  "description": "Week 7 homework, use of Node Js: get, post, put.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mnguyen8/iit-itmd462-michael_nguyen/blob/master/Assignments/Week%207/server.js"
+  },
+  "keywords": [
+    "ITM",
+    "462",
+    "Week",
+    "7",
+    "Assignment"
+  ],
+  "author": "Michael Nguyen",
+  "license": "ISC"
+}
