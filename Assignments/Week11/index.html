@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reminders</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+
+  <!-- CSS Styles -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!--custom css-->
+  <link rel="stylesheet" href="detail.css">
+
+</head>
+<body>
+  <header class="container-fluid">
+    <h1>REMINDERS</h1> 
+  </header>
+  <main>
+  <!--Navigation tabs-->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="tabs" class="active clear"><a href="#addUser" aria-controls="addUser" role="tab" data-toggle="tab" class="clear">Add User</a></li>
+    <li role="tabs"><a href="#addReminder" aria-controls="addReminder" role="tab" data-toggle="tab"  class="clear">Add New Reminder</a></li>
+    <li role="tabs"><a href="#searchUser" aria-controls="searchUser" role="tab" data-toggle="tab"  class="clear">Search User</a></li>
+    <li role="tabs"><a href="#viewReminders" aria-controls="viewReminders" role="tab" data-toggle="tab"  class="clear">User Reminders</a></li>
+    <li role="tabs"><a href="#searchReminder" aria-controls="searchReminder" role="tab" data-toggle="tab"  class="clear">Search Reminder</a></li>
+    <li role="tabs"><a href="#deleteUser" aria-controls="deleteUser" role="tab" data-toggle="tab"  class="clear">Delete User</a></li>
+    <li role="tabs"><a href="#deleteReminder" aria-controls="deleteReminder" role="tab" data-toggle="tab"  class="clear">Delete Reminder</a></li>
+    <li role="tabs"><a href="#deleteAll" aria-controls="deleteAll" role="tab" data-toggle="tab"  class="clear">Delete All Reminders</a></li>
+  </ul>
+
+  <!--Tab content-->
+  <div class="tab-content">
+<div role="tabPage" class="tab-pane active" id="addUser">
+  <p class="alrt">
+    Add new user email and name.
+  </p>
+  Name:<input type="text" class="addName input" />
+  Email:<input type="text" class="addEmail input" />
+  <button class="good">Add User</button>
+</div>
+<div role="tabPage" class="tab-pane" id="addReminder">
+  <p class="alrt">
+    Add new reminder to a user.
+  </p>
+  Title:<input type="text" class="addTitle input" />
+  Description:<input type="text" class="addDescription input"/>
+  User ID:<input type="text" class="userId input"/>
+  <button class="good">Add Reminder</button>
+</div>
+<div role="tabPage" class="tab-pane" id="searchUser">
+  <p>
+    Search user by user ID.
+  </p>
+  User ID:<input type="text" class="searchUser input"/>
+  <button>Search</button> 
+</div>
+<div role="tabPage" class="tab-pane" id="viewReminders">
+  <p>
+    View all reminders under a user by ID.
+  </p>
+  User ID:<input type="text" class="viewReminder input"/>
+  <button>View Reminders</button>
+</div>
+<div role="tabPage" class="tab-pane" id="searchReminder">
+  <p>
+    Search a reminder by user ID and reminder ID.
+  </p>
+  User ID:<input type="text" class="search input" />
+  Reminder ID:<input type="text" class="searchRem input" />
+  <button>Search</button>
+</div>
+<div role="tabPage" class="tab-pane" id="deleteUser">
+  <p class="alert">
+    Deletes user information by user ID.
+  </p>
+  User ID:<input type="text" class="delUserId input" />
+  <button class="bad">Delete</button>
+</div>
+<div role="tabPage" class="tab-pane" id="deleteReminder">
+  <p class="alert">
+    Delete reminder by reminder ID.
+  </p>
+  User ID:<input type="text" class="delUser input" />
+  Reminder ID:<input type="text" class="delRemId input" />
+  <button class="bad">Delete</button>
+</div>
+<div role="tabPage" class="tab-pane" id="deleteAll">
+  <p class="alert">
+    Delete all reminders under a user by user ID.
+  </p>
+  User ID:<input type="text" class="delAll input" />
+  <button class="bad">Delete</button>
+</div>
+</div>
+<div class="output">
+</div>
+</main>
+
+<!-- Scripts at end so page loads faster-->
+<script src="app.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
