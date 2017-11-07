@@ -1,0 +1,35 @@
+/*
+Michael Nguyen
+ITM 462
+Week 11 assignment
+*/
+
+body{
+	background-color: black; 
+	color: white;
+}
+input{
+	color:black;
+}
+button{
+	background-color: gray; 
+	color: cyan;
+}
+.alert{
+	color:red;
+}
+.alrt{
+	color:green;
+}
+.good:hover{
+	background-color: lime; 
+	color: black;
+}
+.bad:hover{
+	background-color: red; 
+	color: white;
+}
+.tab-pane{
+	padding-top: 50px;
+	text-align: center;
+}
