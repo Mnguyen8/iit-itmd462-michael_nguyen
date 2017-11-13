@@ -1,7 +1,7 @@
 /*
 Michael Nguyen
 ITM 462
-Week 11 assignment
+Assignment 8
 */
 
 $(document).ready(function() {
